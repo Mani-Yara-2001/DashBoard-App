@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Sample Widget 1",
+    "info": "This is a sample widget",
+    "category": "CSPM Executive Dashboard"
+  },
+  {
+    "name": "Sample Widget 2",
+    "info": "This is another sample widget",
+    "category": "CWPP Dashboard"
+  }
+]

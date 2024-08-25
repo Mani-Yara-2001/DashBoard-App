@@ -1,0 +1,174 @@
+/* General styling for the dashboard page */
+.dashboard-page {
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.dashboard-page:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: #b0bec5;
+}
+
+/* Header section styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 42px;
+  border-bottom: 2px solid #004d40;
+  background: linear-gradient(90deg, #004d40 0%, #007bff 100%);
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.header:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #004d40 100%);
+}
+
+.header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Search bar styling */
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 8px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #004d40;
+  background-color: #f5f5f5;
+}
+
+/* Add widget button styling */
+.add-widget-button {
+  background-color: #303841;
+  color: white;
+  font-size: small;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: -4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-widget-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Category section styling */
+.category-section {
+  margin-top: 30px;
+}
+
+.category-title {
+  margin-bottom: 10px;
+  color: #004d40;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Widget list styling */
+.widget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual widget item styling */
+.widget-item {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Keeps column layout */
+  align-items: flex-start; /* Align content to the left */
+  gap: 15px; /* Adjusted gap for larger image size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.widget-item:hover {
+  background-color: #ffffff;
+  transform: translateY(-5px);
+}
+
+/* Widget image styling */
+.widget-image {
+  width: 150px; /* Increased width */
+  height: 150px; /* Increased height */
+  object-fit: cover; /* Ensures the image covers the defined dimensions */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Adds spacing between the image and other content */
+  transition: transform 0.3s ease;
+}
+
+.widget-image:hover {
+  transform: scale(1.1);
+}
+
+/* Remove button styling */
+.remove-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 4px 8px; /* Kept smaller button size */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-end; /* Aligns the button to the right in column layout */
+  margin-top: 5px; /* Adds a little space above the button */
+}
+
+.remove-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+
+  .header h2 {
+    margin: 0;
+    color: #004d40;
+    font-size: 8px;
+  }
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px; /* Reduced margin for smaller screens */
+    padding: 8px; /* Increased padding for better touch targets */
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+    font-size: 16px; /* Larger font size for better readability on small screens */
+  }
+
+
+}
+
+
+
+
+
+
